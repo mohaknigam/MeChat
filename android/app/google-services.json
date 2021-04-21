@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "700231789573",
+    "project_id": "chatto-186d6",
+    "storage_bucket": "chatto-186d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700231789573:android:a72b269725863761f6406c",
+        "android_client_info": {
+          "package_name": "com.example.me_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700231789573-q17s8hja3uodoi6969cuo48rnj1kb0de.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCexMHObSGKuIzzd-cix3a1oRqnvBkzxaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700231789573-q17s8hja3uodoi6969cuo48rnj1kb0de.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
