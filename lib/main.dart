@@ -6,8 +6,6 @@ import 'package:me_chat/screens/auth_screen.dart';
 import 'package:me_chat/screens/chat_screen.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -29,7 +27,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: StreamBuilder(
-        stream: FirebaseAuth.instance.authStateChanges(),
+        stream: FirebaseAuth.instance.onAuthStateChanged,
         builder: (ctx, userSnapshot) {
           if (userSnapshot.hasData) {
             return ChatScreen();

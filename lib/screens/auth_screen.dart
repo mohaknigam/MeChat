@@ -14,7 +14,7 @@ class _AuthScreenState extends State<AuthScreen> {
   var _isLoading = false;
   void _submitAuthForm(String email, String password, String username,
       bool isLogin, BuildContext ctx) async {
-    UserCredential authResult;
+    AuthResult authResult;
 
     try {
       setState(() {
@@ -27,10 +27,10 @@ class _AuthScreenState extends State<AuthScreen> {
         authResult = await _auth.createUserWithEmailAndPassword(
             email: email, password: password);
 
-        await FirebaseFirestore.instance
+        await Firestore.instance
             .collection('user')
-            .doc(authResult.user.uid)
-            .set({
+            .document(authResult.user.uid)
+            .setData({
           'username': username,
           'email': email,
         });
